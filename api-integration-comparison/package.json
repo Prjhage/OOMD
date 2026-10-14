@@ -1,0 +1,23 @@
+{
+  "name": "api-integration-comparison",
+  "version": "1.0.0",
+  "description": "Academic case study comparing Native Fetch API vs Axios for Node.js HTTP client integration.",
+  "main": "benchmark.js",
+  "type": "module",
+  "scripts": {
+    "start:server": "node src/server.js",
+    "benchmark": "node benchmark.js",
+    "graphs": "python analysis/generate_graphs.py",
+    "run:all": "node benchmark.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "csv-writer": "^1.6.0",
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+Approach,Test Case,Test Label,Iterations,Median Response Time (ms),P95 Response Time (ms),Mean Response Time (ms),Std Dev (ms),Correct Handling Rate (%),Correctly Handled Count,Total Count
+Fetch,success_small,Successful small response,30,1.714,4.780,2.121,1.077,100.0,30,30
+Axios,success_small,Successful small response,30,2.063,3.981,2.202,0.814,100.0,30,30
+Fetch,success_large,Successful large response,30,3.105,6.414,3.898,2.656,100.0,30,30
+Axios,success_large,Successful large response,30,3.329,5.937,3.632,0.906,100.0,30,30
+Fetch,http_404,HTTP 404 response,30,1.142,2.617,1.346,0.511,100.0,30,30
+Axios,http_404,HTTP 404 response,30,1.272,1.956,1.380,0.271,100.0,30,30
+Fetch,http_500,HTTP 500 response,30,1.162,2.450,1.333,0.400,100.0,30,30
+Axios,http_500,HTTP 500 response,30,1.336,2.378,1.527,0.677,100.0,30,30
+Fetch,timeout,Timeout scenario,30,2008.751,2018.574,2009.814,7.183,100.0,30,30
+Axios,timeout,Timeout scenario,30,2011.479,2019.860,2013.631,12.896,100.0,30,30

@@ -1,0 +1,9 @@
+Metric,Fetch API (A),Axios (B),Notes
+External npm dependencies (HTTP client only),0,1 (axios),Fetch is built-in since Node 18; Axios requires npm install
+"Implementation lines (non-blank, non-comment)",92,88,Counted with PowerShell Where-Object filter on each client file
+Total file lines (including docs),159,166,Raw wc -l equivalent
+Timeout mechanism,AbortController + clearTimeout,axios.create({ timeout }),Fetch requires manual wiring; Axios integrates natively
+HTTP error detection,Manual (!response.ok),Manual (status range check),Both require explicit status checks because validateStatus:()=>true
+JSON body parsing,Manual (response.text + JSON.parse),Automatic,Axios parses JSON automatically; Fetch requires two async steps
+Instance / config mechanism,Per-call options object,axios.create() named instance,Axios supports reusable configured instances
+Payload byte measurement,Buffer.byteLength(rawText),Buffer.byteLength(JSON.stringify(data)),Slight re-serialisation overhead in Axios path; negligible
